@@ -17,6 +17,9 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      # Clonar el repositorio en la máquina virtual
+      - name: Checkout
+        uses: actions/checkout@v3
       # Ejecutar hola mundo en Python!
-      - name: Hola mundo Python
+      - name: Ejecutar Script
         run: python hola_mundo.py
